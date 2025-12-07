@@ -1,7 +1,7 @@
 A Web Python-Based Tool for the Prediction of Natural Gas Hydrates Equilibrium and Inhibition.
 Developed by Karsten Kunneman in collaboration with Prof. Amadeu K. Sum at the Colorado School of Mines
 
-Version 1.4.0 - 11/30/2025
+Version 1.4.1 - 12/07/2025
 
 This tool is designed to determine the equilibrium conditions for a given single- or multiple-component
 hydrate system, including systems in the presence of inhibitors (alcohols, glycols, and salts). 
