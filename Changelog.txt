@@ -1,1 +1,2 @@
-1. Upgraded to p2f_HydrateCalcLib 0.1.0.8, adding zinc salt functionality
+1. Upgraded to p2f_HydrateCalcLib 0.1.0.9
+2. Fixed an issue with displaying more than 10 entries in the salt wt% input table

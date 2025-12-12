@@ -57,7 +57,7 @@ with c2:
         base64.b64encode(open("thumbnail_P2F_logo(green) (FULL).png", "rb").read()).decode()
     ), unsafe_allow_html=True)
 
-st.caption('Version 1.4.1')
+st.caption('Version 1.4.2')
 
 programType = st.radio("Calculation Type", ["Equilibrium Calculation", "Minimum Concentration Calculation"], horizontal=True)
 
@@ -183,7 +183,7 @@ if programType == "Equilibrium Calculation":
             saltConcDf = pd.DataFrame([])
             for i in range(len(salts)):
                 saltConcDf = pd.concat([saltConcDf, pd.DataFrame([{'Salt': salts[i], 'Wt. %': 0.}])], ignore_index=True)
-            inputSaltDf = st.data_editor(saltConcDf, hide_index=True, column_config={
+            inputSaltDf = st.data_editor(saltConcDf, height=38+35*len(salts), hide_index=True, column_config={
                 "Salt": st.column_config.TextColumn("Salt", disabled=True),
                 "Wt. %": st.column_config.NumberColumn("Wt. %"),
             })
