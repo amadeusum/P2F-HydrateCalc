@@ -50,12 +50,16 @@ with c1:
     st.title('Gas Hydrate Equilibrium Predictions Calculator')
 with c2:
     #st.markdown("[![Phases to Flow Laboratory](thumbnail_P2F_logo(green) (FULL).png)](people.mines.edu/asum/)", unsafe_allow_html=True)
-    st.markdown(
-    """<a href="https://people.mines.edu/asum/">
-    <img src="data:image/png;base64,{}" width="462">
-    </a>""".format(
-        base64.b64encode(open("thumbnail_P2F_logo(green) (FULL).png", "rb").read()).decode()
-    ), unsafe_allow_html=True)
+   st.markdown(
+        f"""
+        <div style="display: flex; align-items: center; height: 100%; padding-top: 25px;">
+            <a href="https://people.mines.edu/asum/">
+                <img src="data:image/png;base64,{base64.b64encode(open("thumbnail_P2F_logo(green) (FULL).png", "rb").read()).decode()}" width="100%">
+            </a>
+        </div>
+        """, 
+        unsafe_allow_html=True
+    )
 
 st.caption('Version 1.4.2 (last update: 2025.12)')
 
